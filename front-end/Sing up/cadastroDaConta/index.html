@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cadastre-se</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="navbar show-menu">
+      <div class="header-inner-content">
+          <h1 class="logo">MW1<span>STORE</span></h1>
+          <nav>
+              <ul>
+                  <li><a href="../loja/index.html">Home</a></li>
+                  <li><a href="../produtos/index.html">Produtos</a></li>
+                  <li><a href="../sobre/index.html">Sobre</a></li>
+                  <li><a href="../CriarConta/index.html">Criar conta</a></li>
+              </ul>
+          </nav>
+          <div class="nav-icon-container">
+              <img src="../loja/images/cart.png" alt="">
+              <img src="../loja/images/menu.png" class="menu-button" alt="">
+          </div>
+      </div>
+  </div>
+    
+
+    <h1 class="ola">Cadastre-se para aproveitar nosso site.</h1>
+    <div class="div">
+      <form id="register-form"onsubmit="event.preventDefault(); registerUser();">
+        <input type="text" id="usuario" placeholder="Digite seu usuario" required />
+        <input type="password" id="password" placeholder="Senha" minlength="8" required />
+        <button type="submit">Cadastrar</button>
+        <a class="link" href="../logarConta/index.html">Faça seu login</a>
+      </form>
+    </div>
+  </body>
+</html>
