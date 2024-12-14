@@ -28,7 +28,7 @@ async function loginUser() {
     }
 
     if (response.ok) {
-      window.location.href = "../../contaLogada/loja/index.html";
+      window.location.href = "../../Sing in/loja/index.html";
     }
   } catch (error) {
     console.error("Erro ao fazer login:", error);

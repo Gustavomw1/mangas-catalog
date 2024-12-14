@@ -23,7 +23,7 @@ async function registerUser() {
 
     // Redirecionar para index2.html após o cadastro
     if (response.ok) {
-      window.location.href = "../../contaLogada/loja/index.html"
+      window.location.href = "../../Sing in/loja/index.html"
     }
   } catch (error) {
     console.error("Erro ao cadastrar usuário:", error);
