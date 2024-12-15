@@ -1,0 +1,18 @@
+0. PACKS:
+  Primeiros passos para a criação da api se resume em, fazer o downloand de todas as ferramentas que serao utilizadas, fazer o npm
+  delas e baixar o @type delas.
+
+1. SERVER.TS:
+  O server.ts é o começo da api, primeiramente fazer o import das ferramentas que serão utilizadas, o server.ts é aonde o server 
+  sera iniciado entao no caso fazer a importação do framework que sera utilizado para a criação da api E tambem fazer o downloand de uma 
+  ferramenta de segurança, para proteger o server. E tambem fazer a importação da pasta que ligara as rotas da api.
+
+  . Fazer uma variavel recebendo o express.
+  . Utilizar a variavel que está recebendo o express e usar ela passando entre parentes a ferramenta de segurança.
+  . Utilizar a variavel que está recebendo o express e usar ela passando entre parentes o framework de criação mais uma troca de
+    armazenamento. (json)
+  . Utilizar a variavel que está recebendo o express e usar ela passando entre parentes o arquivo que está as rotas.
+  . Por ultimo ligar a rota,  Utilizar a variavel que está recebendo o express e a funcao 'listen' passando entre parentes a port
+    e uma ary function com um console.
+
+2. ROUTES.TS:
