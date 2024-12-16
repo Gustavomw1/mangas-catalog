@@ -16,3 +16,12 @@
     e uma ary function com um console.
 
 2. ROUTES.TS:
+  O routes.ts é onde as rotas se localizam
+  . Fazer o import da ferramenta de rotas passando entre chaves e selecionando o framework que sera usado
+  . Fazer o import da pasta onde se encontra as configuraçoes das rotas
+  . Criar uma variavel passando a ferramenta de rotas
+  . Passando a variavel criada que armazena a ferramenta 'routes' + e o tipo da rota, e passando a variavel que está pegando a 
+    pasta onde fica as configuraçoes das rotas
+  . Exportar a pasta na forma default
+
+3. DATABASE.TS
