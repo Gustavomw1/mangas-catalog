@@ -1,11 +1,14 @@
 0. PACKS:
-  Primeiros passos para a criação da api se resume em, fazer o downloand de todas as ferramentas que serao utilizadas, fazer o npm
-  delas e baixar o @type delas.
+  . Primeiros passos para a criação da api se resume em, fazer o downloand de todas as ferramentas que serao utilizadas, fazer o npm
+    delas e baixar o @type delas.
+
+0. ENV:
+  . Esconder seus dados utilizar o DB_tag e receber seus dados
 
 1. SERVER.TS:
-  O server.ts é o começo da api, primeiramente fazer o import das ferramentas que serão utilizadas, o server.ts é aonde o server 
-  sera iniciado entao no caso fazer a importação do framework que sera utilizado para a criação da api E tambem fazer o downloand de uma 
-  ferramenta de segurança, para proteger o server. E tambem fazer a importação da pasta que ligara as rotas da api.
+  . O server.ts é o começo da api, primeiramente fazer o import das ferramentas que serão utilizadas, o server.ts é aonde o server 
+    sera iniciado entao no caso fazer a importação do framework que sera utilizado para a criação da api E tambem fazer o downloand de uma 
+    ferramenta de segurança, para proteger o server. E tambem fazer a importação da pasta que ligara as rotas da api.
 
   . Fazer uma variavel recebendo o express.
   . Utilizar a variavel que está recebendo o express e usar ela passando entre parentes a ferramenta de segurança.
@@ -25,3 +28,43 @@
   . Exportar a pasta na forma default
 
 3. DATABASE.TS
+  O database.ts é onde se conecta com o banco de dados
+  . Fazer o import da ferramenta de segurança que sera usada
+  . Usar a ferramenta de segurança com um funcao config
+  . Para fazer a ligação com o banco, precisa usar a tag 'export' e uma variavel com um nome
+    recebendo uma funcao 'new DataSource'
+  . Passar as informaçoes para se conectar com seu banco como:
+    type, host, password, username, database, port e com a tag process.env.DB_HOST.
+  . Por ultimo criar um .then catch. Usando a variavel criada com uma funcao initialize e colocar
+    then passando uma ary function com um console banco ok, e um .catch passando dentro um erro e uma 
+    ary function com um console erro ao se conectar.
+
+4. CONTROLLERS.TS
+  -- CONFIGURAÇOES PADROES:
+
+  O userControllers é onde as rotas serao configuradas
+  . Entre chaves fazer o import do Request, Response e o Router selecionando o express
+  . Fazer o import da rota onde está configurado o banco 
+  . Fazer o import das ferramenta de segurança bcrypt, jwt, dotenv
+  . Usar O dotenv com a funcao config
+  . Criar uma variavel recebendo a configuraçao do env, e criar um if passando '!SECRET' com a funcao ' throw new Error'
+  . Trocar o nome da variavel recebendo o AppDataSource
+  . Criar uma variavel recebendo a funcao Router
+
+  -- VER USUARIO:
+
+  . Usar variavel que está recebendo o express com a tag 'get' passando entre parentes o nome da rota, e uma tag 'async'
+    passando entre parentes um underline com req recebendo recebendo Request e o res recebendo Response com uma ary function
+  . Com um 'try' criar uma variavel recebendo a tag 'await' a conexao com o banco pegando o query, entre parentes selecionar
+    tudo e mais o nome do banco
+  . E retornar um res passando 200 com o json ''result
+  . Com um catch entre parentes passar um erro e passar um return com res 500.json erro ao buscar
+
+  -- CADASTRAR USUARIO
+
+  userRouter.post('/cadastrar', async (req: Request, res: Response) => {
+    const { usuario, password } = req.body;
+
+    if (!usuario || !password) {
+        return res.status(400).json({ mensagem: 'Usuario e senha são obrigatorios' });
+    }
