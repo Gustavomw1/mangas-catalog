@@ -5,37 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LerManga</title>
     <link rel="stylesheet" href="global.css">
+    <link rel="shortcut icon" href="../../2261122-book-icon-black-symbol-isolate-on-white-background-vector-illustration-vetor.jpg" type="image/x-icon">
 </head>
 <body>
     <header>
-       <div class="navbar">
-            <h1 class="logo">LERMANGA</h1>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Acesse nosso discord</a></li>
-            </ul>
-            <input type="text" class="search" name="" id="" placeholder="search">
-      </div>
-      <div class="navbar2">
-        <ul>
-            <button><a href="#" style="color: #fff; text-decoration: none;">Minha conta</a></button>
-            <button><a href="#" style="color: #fff; text-decoration: none;">Favoritos</a></button>
-        </ul>
-      </div>
-    </header>
+  <div class="navbar">
+    <h1><a href="index.html">LERMANGA</a></h1>
+    <div class="search-container">
+      <input type="text" class="search" placeholder="Pesquisar">
+    </div>
+  </div>
+
+  <div class="navbar2">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Acesse nosso discord</a></li>
+    </ul>
+    
+    <ul class="button-container">
+      <li><button class="btn-enter"><a href="#">Opções da conta</a></button></li>
+      <li><button class="btn-create"><a href="#">Favoritos</a></button></li>
+    </ul>
+  </div>
+</header>
+
 
     <main>
         <div class="selected-products">
             <div class="page-inner-content">
-                <h3 class="section-title">ÚLTIMAS ATUALIZAÇÕES</h3>
+                <h3 class="section-title">ÚLTIMOS LANÇAMENTOS</h3>
                 <div class="subtitle-underline"></div>
                 <div class="cols cols-4">
                     <div class="product">
                         <a href="#">
-                            <img src="../mangas/kagurabachi.webp" alt="" style="height: 245px;">
+                            <img src="../mangas/sono.jpg" style="height: 236px;" alt="">
                         </a>
-                        <p class="product-name">kagurabachi</p>
+                        <p class="product-name">Sono Bisque Doll <br>wa Koi o Suru</p>
                         <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
                         <button>capitulo 287 (PT-BR)</button>
                     </div>
@@ -75,23 +81,23 @@
                     </div>
                     <div class="product">
                         <a href="#">
-                            <img src="../mangas/jujutsu.jpg" alt="">
+                            <img src="../mangas/jujutsu.jpg" style="height: 267px;" alt="">
                         </a>
                         <p class="product-name">Jujutsu No Kaisen</p>
                         <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                        <button>capitulo 287 (PT-BR)</button>
+                        <button style="margin-top: 14px";>capitulo 287 (PT-BR)</button>
                     </div>
                     <div class="product">
                         <a href="#">
-                            <img src="../mangas/sono.jpg" alt="">
+                            <img src="../mangas/kagurabachi.webp" alt="" style="height: 267px;">
                         </a>
-                        <p class="product-name">Sono Bisque Doll <br> wa Koi o Suru</p>
+                        <p class="product-name">kagurabachi</p>
                         <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                        <button>capitulo 287 (PT-BR)</button>
+                        <button style="margin-top: 14px;">capitulo 287 (PT-BR)</button>
                     </div>
                     <div class="product">
                         <a href="#">
-                            <img src="../mangas/tower of god.jpg" alt="">
+                            <img src="../mangas/tower of god.jpg" style="height: 267px;" alt="">
                         </a>
                         <p class="product-name">Tower Of God</p>
                         <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
@@ -99,33 +105,9 @@
                     </div>
                     <div class="product">
                         <a href="#">
-                            <img src="../mangas/the infinit.png" alt="">
+                            <img src="../mangas/the infinit.png" alt="" style="height: 230px;">
                         </a>
                         <p class="product-name">The Infinite Mage</p>
-                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                        <button>capitulo 287 (PT-BR)</button>
-                    </div>
-                    <div class="product">
-                        <a href="#">
-                            <img src="../mangas/one push.jpg" alt="">
-                        </a>
-                        <p class="product-name">One punch-man</p>
-                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                        <button>capitulo 287 (PT-BR)</button>
-                    </div>
-                    <div class="product">
-                        <a href="#">
-                            <img src="../mangas/re zero.jpg" alt="">
-                        </a>
-                        <p class="product-name">Re Zero</p>
-                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                        <button>capitulo 287 (PT-BR)</button>
-                    </div>
-                    <div class="product">
-                        <a href="#">
-                            <img src="../mangas/hunter.jpg" alt="">
-                        </a>
-                        <p class="product-name">Hunter x Hunter</p>
                         <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
                         <button>capitulo 287 (PT-BR)</button>
                     </div>
@@ -170,7 +152,7 @@
             </div>
         </div>
         <div class="vertical5">
-            <button class="view">View All</button>
+            <button class="view">Ver mais</button>
         </div>
 
         <button class="load">LOAD MORE</button>

@@ -25,28 +25,28 @@ body{
   .link {
     display: flex;
     justify-content: center;
-    color: #0056b3;
+    color: #9123df;
     margin-top: 30px;
   }
   
   input[type="text"],
   input[type="password"] {
-    width: 600px;
-    padding: 10px;
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 16px;
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto; 
+    color: #000;
+    outline: none;
+  transition: background 0.3s, color 0.3s;
   }
   
   
   button {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #9123df;
     color: white;
     border: none;
     border-radius: 3px;
@@ -56,5 +56,5 @@ body{
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #571388;
   }
