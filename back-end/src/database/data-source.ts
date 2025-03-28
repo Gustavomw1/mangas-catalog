@@ -20,3 +20,4 @@ AppDataSource.initialize()
   .catch((error) => {
     console.log("Erro ao se conectar com o banco");
   });
+

@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
   }
-  
+
   .navbar {
     display: flex;
     align-items: center;
@@ -132,6 +132,38 @@
     max-width: 1180px;
     margin: 0 auto;
   }
+
+  #favorites-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.favorite-item {
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.favorite-img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.remove-fav {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
   
   .product {
     width: 200px;
